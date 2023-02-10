@@ -164,6 +164,8 @@ The **NT AUTHORITY\NETWORK SERVICE** account should be listed.
 
     > [!NOTE]
     > If you do not update this key, then **WsusUtil** will attempt to service the WID rather than the SQL Instance to which you have migrated.
+6. Also locate this reg setting HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Update Services\Server\Setup\SqlServerName
+7. Rename the value to the servername if it is on the local server enter the localservername.
 
 ### Start the IIS and WSUS services on the WSUS server
 
